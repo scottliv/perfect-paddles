@@ -1,0 +1,84 @@
+
+body {
+	color: #2d2d2d;
+}
+
+.container {
+	max-width: 1140px;
+	text-align: center;
+}
+
+.nav-bar {
+	background-color: #000;
+	color: #fff;
+
+}
+
+
+header div {
+	margin: auto;
+	min-height: 450px;
+	background-image: url('images/kayak-bkgd.jpg');
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	text-align: center;
+	font-size: 20px;
+	color: #fff;
+}
+
+header h2 {
+	font-family: fonts/pacifico;
+}
+
+header button {
+	background-color: #e2574c;
+	border-radius: 5px;
+	border: none;
+	color: white;
+	padding: 10px;
+}
+
+section p {
+
+	font-size: 14px;
+	font-family: arial;
+}
+
+section h3 {
+	color: #646464;
+}
+
+table{
+	border: 1px solid;
+	border-color: #c8c8c8;
+	border-collapse: collapse;
+
+}
+
+table th {
+	background-color: #e6e6e6;
+}
+
+a.brand-color {
+	color: #e2574c;
+}
+
+a:hover.brand-color{
+	color: #b64036;
+}
+
+table td, th {
+	border: 1px solid #c8c8c8;
+	border-collapse: collapse;
+}
+
+
+footer {
+	background-color: #212121;
+	color: #fff;
+}
+footer a {
+	text-decoration: none;
+	color: #fff;
+}
