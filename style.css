@@ -79,6 +79,10 @@ section h3 {
 	color: #646464;
 }
 
+div.rentals {
+	display: flex;
+}
+
 table{
 	border: 1px solid;
 	border-color: #c8c8c8;
