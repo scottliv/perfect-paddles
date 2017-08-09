@@ -6,14 +6,32 @@ body {
 .container {
 	max-width: 1140px;
 	text-align: center;
+	margin: auto;
 }
 
 .nav-bar {
+	height: 45px;
 	background-color: #000;
 	color: #fff;
 
 }
+nav { 
+	align-items: center;
+	display: flex;
+}
 
+.pp-logo {
+	height: 40px;
+}
+nav ul {
+	display: inline-block;
+	margin-right: 0px;
+	margin-left: auto;
+}
+nav ul li {
+	display: inline-block;
+	padding: 10px;
+}
 
 header div {
 	margin: auto;
@@ -45,6 +63,18 @@ section p {
 	font-family: arial;
 }
 
+div.images {
+	display: flex;
+	justify-content: space-around;
+	align-items: flex-start;
+
+}
+
+div.images img {
+	flex: 1;
+	max-width: 32%;
+	height: auto;
+}
 section h3 {
 	color: #646464;
 }
@@ -75,8 +105,16 @@ table td, th {
 
 
 footer {
+	align-items: center;
 	background-color: #212121;
+	display: flex;
 	color: #fff;
+	height: 100px;
+}
+
+footer ul {
+	margin-right: 10%;
+	margin-left: auto;
 }
 footer a {
 	text-decoration: none;
