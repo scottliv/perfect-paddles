@@ -133,6 +133,10 @@ header button {
     max-width: 250px;
 }
 
+.container p {
+    line-height: 1.5em;
+}
+
 .images img {
     max-width: 100%;
     height: auto;
@@ -142,12 +146,20 @@ table{
     border: 1px solid;
     border-color: #c8c8c8;
     border-collapse: collapse;
+    width: 100%;
 
 }
 
 table th {
     background-color: #e6e6e6;
 }
+
+table td, th {
+    border: 1px solid #c8c8c8;
+    border-collapse: collapse;
+    padding: 10px;
+}
+
 
 a.brand-color {
     color: #e2574c;
@@ -157,10 +169,15 @@ a:hover.brand-color{
     color: #b64036;
 }
 
-table td, th {
-    border: 1px solid #c8c8c8;
-    border-collapse: collapse;
+.article p {
+    padding-top: 20px;
+
 }
+
+.article p:last-child {
+    padding-bottom: 20px;
+}
+
 
 
 footer {
@@ -206,7 +223,6 @@ footer a {
     }
 
     nav ul li {
-        display: inline-block;
         padding: 10px;
     }
 
@@ -225,6 +241,15 @@ footer a {
     .rentals {
         display: flex;
         text-align: left;
+    }
+
+    .article {
+        flex: 1;
+    }
+
+    .rentals table {
+        flex: 1;
+        max-width: 50%;
     }
 
     
