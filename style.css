@@ -83,6 +83,11 @@ div.rentals {
 	display: flex;
 }
 
+.article {
+	text-align: left;
+	width: 50%;
+}
+
 table{
 	border: 1px solid;
 	border-color: #c8c8c8;
