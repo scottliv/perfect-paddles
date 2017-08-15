@@ -53,42 +53,49 @@
     font-style: normal;
 }
 
-body {
+html, body {
 	color: #2d2d2d;
-	font-family: 'karla-regular';
+	font-family: 'karla-regular', sans-serif;
+	font-size: 16px; 
 }
 
-.container {
-	max-width: 1140px;
+
+h1, h2, h3 {
+	font-family: 'pacifico', cursive;
 	text-align: center;
-	margin: auto;
+	font-size: 1.35em;
+	color: #646464;
+}
+
+nav {
+	display: flex;
+	flex-direction: column;
+}
+
+nav ul {
+	display: flex;
+	justify-content: center;
+}
+
+nav ul li {
+	padding: 10px;
 }
 
 .nav-bar {
-	height: 45px;
 	background-color: #000;
 	color: #fff;
-
-}
-nav { 
-	align-items: center;
-	display: flex;
 }
 
 .pp-logo {
 	height: 40px;
 }
-nav ul {
-	display: inline-block;
-	margin-right: 0px;
-	margin-left: auto;
-}
-nav ul li {
-	display: inline-block;
-	padding: 10px;
+
+
+header div h1, h2 {
+	color: #fff;
 }
 
-header div {
+header div {	
 	margin: auto;
 	min-height: 450px;
 	background-image: url('images/kayak-bkgd.jpg');
@@ -96,12 +103,7 @@ header div {
 	background-size: cover;
 	background-repeat: no-repeat;
 	text-align: center;
-	font-size: 20px;
 	color: #fff;
-}
-
-h1, h2, h3 {
-	font-family: 'pacifico', cursive;
 }
 
 header button {
@@ -112,35 +114,9 @@ header button {
 	padding: 11px;
 }
 
-section p {
-
-	font-size: 14px;
-	font-family: arial;
-}
-
-div.images {
-	display: flex;
-	justify-content: space-around;
-	align-items: flex-start;
-
-}
-
 div.images img {
-	flex: 1;
-	max-width: 32%;
+	max-width: 100%;
 	height: auto;
-}
-section h3 {
-	color: #646464;
-}
-
-div.rentals {
-	display: flex;
-}
-
-.article {
-	text-align: left;
-	width: 50%;
 }
 
 table{
@@ -189,3 +165,63 @@ footer a {
 	text-decoration: none;
 	color: #fff;
 }
+
+
+@media all and (min-width: 600px){
+
+	.container {
+	max-width: 1140px;
+	text-align: center;
+	margin: auto;
+	}
+
+	nav { 
+	align-items: center;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	}
+
+	nav ul {
+	display: flex;
+	}
+
+	nav ul li {
+		display: inline-block;
+		padding: 10px;
+	}
+	
+	
+
+	.pp-logo {
+		margin: none;
+	}
+
+	div.images {
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: flex-start;
+	}
+
+	div.images img {
+		flex: 1;
+		max-width: 32%;
+		height: auto;
+	}
+
+	.rentals {
+		display: flex;
+		text-align: left;
+	}
+
+	
+
+}
+
+@media all and (min-width: 1140px){
+	
+	
+
+}
+
+
