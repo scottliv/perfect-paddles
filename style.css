@@ -172,8 +172,13 @@ footer {
 	align-items: center;
 	background-color: #212121;
 	display: flex;
+	justify-content: space-between;
 	color: #fff;
 	height: 100px;
+}
+
+.social-media {
+	display: flex;
 }
 
 footer ul {
