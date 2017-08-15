@@ -54,173 +54,186 @@
 }
 
 html, body {
-	color: #2d2d2d;
-	font-family: 'karla-regular', sans-serif;
-	font-size: 16px; 
+    color: #2d2d2d;
+    font-family: 'karla-regular', sans-serif;
+    font-size: 16px; 
 }
 
 
 h1, h2, h3 {
-	font-family: 'pacifico', cursive;
-	text-align: center;
-	font-size: 1.35em;
-	color: #646464;
+    font-family: 'pacifico', cursive;
+    text-align: center;
+    font-size: 1.35em;
+    color: #646464;
+    padding: 35px;
 }
 
 nav {
-	display: flex;
-	flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
 
 nav ul {
-	display: flex;
-	justify-content: center;
+    display: flex;
+    justify-content: center;
 }
 
 nav ul li {
-	padding: 10px;
+    padding: 10px;
 }
 
 .nav-bar {
-	background-color: #000;
-	color: #fff;
+    background-color: #000;
+    color: #fff;
 }
 
 .pp-logo {
-	height: 40px;
+    height: 40px;
 }
 
 
-header div h1, h2 {
-	color: #fff;
+header div * {
+    color: #fff;
+    padding: 15px;
 }
 
-header div {	
-	margin: auto;
-	min-height: 450px;
-	background-image: url('images/kayak-bkgd.jpg');
-	background-position: center;
-	background-size: cover;
-	background-repeat: no-repeat;
-	text-align: center;
-	color: #fff;
+header div {    
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    min-height: 450px;
+    background-image: url('images/kayak-bkgd.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    color: #fff;
+}
+
+header div h1 {
+    font-size: 3em;
+}
+
+header div h2 {
+    font-size: 2em;
+}
+
+.sub {
+    background-color: #000;  
 }
 
 header button {
-	background-color: #e2574c;
-	border-radius: 5px;
-	border: none;
-	color: white;
-	padding: 11px;
+    background-color: #e2574c;
+    border-radius: 15px;
+    border: none;
+    color: white;
+    padding: 11px;
+    max-width: 250px;
 }
 
-div.images img {
-	max-width: 100%;
-	height: auto;
+.images img {
+    max-width: 100%;
+    height: auto;
 }
 
 table{
-	border: 1px solid;
-	border-color: #c8c8c8;
-	border-collapse: collapse;
+    border: 1px solid;
+    border-color: #c8c8c8;
+    border-collapse: collapse;
 
 }
 
 table th {
-	background-color: #e6e6e6;
+    background-color: #e6e6e6;
 }
 
 a.brand-color {
-	color: #e2574c;
+    color: #e2574c;
 }
 
 a:hover.brand-color{
-	color: #b64036;
+    color: #b64036;
 }
 
 table td, th {
-	border: 1px solid #c8c8c8;
-	border-collapse: collapse;
+    border: 1px solid #c8c8c8;
+    border-collapse: collapse;
 }
 
 
 footer {
-	align-items: center;
-	background-color: #212121;
-	display: flex;
-	justify-content: space-between;
-	color: #fff;
-	height: 100px;
+    align-items: center;
+    background-color: #212121;
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    height: 100px;
 }
 
 .social-media {
-	display: flex;
+    display: flex;
 }
 
 footer ul {
-	margin-right: 10%;
-	margin-left: auto;
+    margin-right: 10%;
+    margin-left: auto;
 }
 footer a {
-	text-decoration: none;
-	color: #fff;
+    text-decoration: none;
+    color: #fff;
 }
 
 
 @media all and (min-width: 600px){
 
-	.container {
-	max-width: 1140px;
-	text-align: center;
-	margin: auto;
-	}
+    .container {
+    max-width: 1140px;
+    text-align: center;
+    margin: auto;
+    }
 
-	nav { 
-	align-items: center;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	}
+    nav { 
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    }
 
-	nav ul {
-	display: flex;
-	}
+    nav ul {
+    display: flex;
+    }
 
-	nav ul li {
-		display: inline-block;
-		padding: 10px;
-	}
-	
-	
+    nav ul li {
+        display: inline-block;
+        padding: 10px;
+    }
 
-	.pp-logo {
-		margin: none;
-	}
+    div.images {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    }
 
-	div.images {
-	flex-direction: row;
-	justify-content: space-between;
-	align-items: flex-start;
-	}
+    div.images img {
+        flex: 1;
+        max-width: 32%;
+        height: auto;
+    }
 
-	div.images img {
-		flex: 1;
-		max-width: 32%;
-		height: auto;
-	}
+    .rentals {
+        display: flex;
+        text-align: left;
+    }
 
-	.rentals {
-		display: flex;
-		text-align: left;
-	}
-
-	
+    
 
 }
 
 @media all and (min-width: 1140px){
-	
-	
+    
+    
 
 }
 
