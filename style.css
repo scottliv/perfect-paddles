@@ -151,7 +151,9 @@ header button {
 }
 
 .container p {
-    line-height: 1.5em;
+    line-height: 1.75em;
+    text-align: center;
+    padding: 5px;
 }
 
 .about {
@@ -194,6 +196,14 @@ a.brand-color {
 
 a:hover.brand-color{
     color: #b64036;
+}
+
+.rentals {
+    padding: 5px;
+}
+
+.rentals p {
+     text-align: left;
 }
 
 .article {
@@ -289,7 +299,6 @@ footer a {
 
     .rentals {
         display: flex;
-        text-align: left;
     }
 
     .article {
