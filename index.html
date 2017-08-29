@@ -2,7 +2,7 @@
 <html>
     <head>
     	<meta charset="utf-8">
-        <meta name="wiewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Perfect Paddles</title>
         <link rel="stylesheet" type="text/css" href="reset.css">
         <script src="https://use.fontawesome.com/6f705003d2.js"></script>
@@ -12,9 +12,9 @@
     	<nav class="nav-bar">
             <img class="pp-logo" src="images/perfect-paddles-logo.svg" alt="Perfect Paddles Logo" />
             <ul>
-                <li>About</li>
-                <li>Rentals</li>
-                <li>Location</li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#rentals">Rentals</a></li>
+                <li><a href="#location">Location</a></li>
             </ul>
         </nav>
         <header>
@@ -32,7 +32,7 @@
             </div>
         </header>
         <section class="container">
-            <div class="about">
+            <div class="about" id="about">
                 <h3>About</h3>
                 <p>Perfect Paddles Kayak Rentals Co. offers you the unique opportunity to experience the great outdoors in one of our single or double kayaks. We cater to all skill levels and abilitites, and offer a variety of lessons and tours too.</p>
             </div>
@@ -46,7 +46,7 @@
 
             <h3>Rentals</h3>
             
-            <div class="rentals">
+            <div class="rentals" id="rentals">
                 
                 <div class="article">
 
@@ -87,7 +87,9 @@
 
             <h3>Location</h3>
             <p>Come visit our location on Cornwall Avenueand Yew Street in Vancouver:</p>
-            <div id="google-map"></div>
+            <div class="location-container" id="location">
+                <iframe width="900" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=cornwall%20and%20yew%20vancouver%20bc&key=AIzaSyAFfyBWSiPbHV5yYmHlmawekevsECHcKW8" allowfullscreen></iframe>
+            </div>
         </section>
         <footer>
             <div>
@@ -122,5 +124,6 @@
                 </ul>
             </div>
         </footer>
+        <script src="tota11y.min.js"></script>
     </body>
 </html>
